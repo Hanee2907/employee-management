@@ -1,0 +1,256 @@
+/* Global Styles */
+body {
+    background-color: #8c8989;
+    background-image: radial-gradient(circle, #f0e7ff, #d1c4e9);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+/* Home Background */
+body.home-background {
+    background-image: url('/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px;
+}
+.home-content {
+    max-width: 500px;
+    margin-right: 40px;
+    color: white;
+}
+
+.home-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+
+/* Header Styles */
+.header {
+    background-color: #373b3f; /* Dark background for header */
+    color: #EAEAEA; /* Light text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.app-title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px; 
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    color: #EAEAEA; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    padding: 10px 15px; 
+    font-size: 1.1em; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    color: #EAEAEA; /* Light text color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+/* Container Styles */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #6c757d; /* Replacing purple with a soft gray */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Welcome Message Styles */
+.welcome-message {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2.2em;
+    color: #545c62; /* Keeping a consistent gray color for the welcome message */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #6c757d; /* Soft gray for input borders */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #b0b3b8; /* Lighter gray on focus */
+    box-shadow: 0 0 5px rgba(176, 179, 184, 0.5); /* Soft gray glow */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d; /* Soft gray for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #b0b3b8; /* Lighter gray on hover */
+    transform: translateY(-2px);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #6c757d; /* Consistent gray for table headers */
+    color: #EAEAEA; /* Light text color for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Error Message Styles */
+span.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Additional Styles */
+.me-2 {
+    margin-right: 0.5rem;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #343A40; /* Dark background for footer */
+    color: #EAEAEA; /* Light text color */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
